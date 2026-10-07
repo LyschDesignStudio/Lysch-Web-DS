@@ -4,8 +4,6 @@ Design tokens of the Lysch Web DS as CSS custom properties, generated from the F
 
 ## Install
 
-The repository is private, so installing needs a GitHub account with access to LyschDesignStudio.
-
 ```bash
 npm install github:LyschDesignStudio/Lysch-Web-DS
 ```
@@ -26,11 +24,13 @@ From CSS:
 @import '@lyschdesignstudio/web-ds';
 ```
 
-Without a bundler, link the file from `node_modules` or copy it:
+Without a bundler or npm (a static site, Cloudflare Pages, a no-code tool), link it from the CDN:
 
 ```html
-<link rel="stylesheet" href="node_modules/@lyschdesignstudio/web-ds/css/lysch-web-ds.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LyschDesignStudio/Lysch-Web-DS@v0.1.0/css/lysch-web-ds.css">
 ```
+
+Keep the version (`@v0.1.0`) in the URL so a site only changes when you move it to a new tag.
 
 Then use the tokens:
 
