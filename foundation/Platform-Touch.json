@@ -1,0 +1,19 @@
+{
+  "size": {
+    "target": {
+      "min": {
+        "$value": "{ref.size.0044}",
+        "$type": "number",
+        "$description": "The minimum hit target (WCAG 2.5.8): 24px with a pointer, 44px on touch.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-target-min)"
+          }
+        }
+      }
+    }
+  }
+}

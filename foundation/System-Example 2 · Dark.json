@@ -1,0 +1,3562 @@
+{
+  "color": {
+    "transparent": {
+      "$value": "{ref.color.transparent}",
+      "$type": "color",
+      "$description": "No color: an element that shows whatever is behind it (a secondary or tertiary button at rest).",
+      "$extensions": {
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-color-transparent)"
+        }
+      }
+    },
+    "surface": {
+      "primary": {
+        "$value": "{ref.color.dark.neutral.050}",
+        "$type": "color",
+        "$description": "The page, and the default background of everything that doesn't float.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-primary)"
+          }
+        }
+      },
+      "secondary": {
+        "$value": "{ref.color.dark.neutral.100}",
+        "$type": "color",
+        "$description": "One step from primary: side panels, table stripes, a filled card.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-secondary)"
+          }
+        }
+      },
+      "tertiary": {
+        "$value": "{ref.color.dark.neutral.200}",
+        "$type": "color",
+        "$description": "Two steps from primary: input wells, tracks, code blocks, skeletons.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-tertiary)"
+          }
+        }
+      },
+      "floating": {
+        "$value": "{ref.color.dark.neutral.100}",
+        "$type": "color",
+        "$description": "Anything that floats above the page, with an elevation: menus, popovers, dialogs, toasts. Not for cards: a card sits on the page and uses primary, secondary or tertiary.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-floating)"
+          }
+        }
+      },
+      "inverse": {
+        "$value": "{ref.color.light.neutral.050}",
+        "$type": "color",
+        "$description": "The opposite of primary: tooltips, snackbars.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-inverse)"
+          }
+        }
+      },
+      "scrim": {
+        "$value": "{ref.color.alpha.black.600}",
+        "$type": "color",
+        "$description": "Dims the page behind a modal. Always black: a scrim darkens, in both schemes (stronger in dark, where the page is already dark).",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-scrim)"
+          }
+        }
+      },
+      "disabled": {
+        "$value": "{ref.color.dark.neutral.400}",
+        "$type": "color",
+        "$description": "The fill of a disabled control that has one (a disabled primary button, a disabled checked checkbox).",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-surface-disabled)"
+          }
+        }
+      }
+    },
+    "content": {
+      "primary": {
+        "$value": "{ref.color.dark.neutral.950}",
+        "$type": "color",
+        "$description": "Body text and anything that must read first.",
+        "$extensions": {
+          "scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-primary)"
+          }
+        }
+      },
+      "secondary": {
+        "$value": "{ref.color.dark.neutral.700}",
+        "$type": "color",
+        "$description": "Supporting text: descriptions, metadata.",
+        "$extensions": {
+          "scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-secondary)"
+          }
+        }
+      },
+      "tertiary": {
+        "$value": "{ref.color.dark.neutral.500}",
+        "$type": "color",
+        "$description": "The least important text: timestamps, counters. Not for anything the user must read.",
+        "$extensions": {
+          "scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-tertiary)"
+          }
+        }
+      },
+      "placeholder": {
+        "$value": "{ref.color.dark.neutral.600}",
+        "$type": "color",
+        "$description": "Placeholder text in inputs; never a label's replacement. Placeholder is text: 4.5:1 (WCAG 1.4.3).",
+        "$extensions": {
+          "scopes": [
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-placeholder)"
+          }
+        }
+      },
+      "disabled": {
+        "$value": "{ref.color.dark.neutral.300}",
+        "$type": "color",
+        "$description": "Text and icons of a disabled element. Exempt from contrast rules (WCAG 1.4.3).",
+        "$extensions": {
+          "scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-disabled)"
+          }
+        }
+      },
+      "inverse": {
+        "$value": "{ref.color.dark.neutral.050}",
+        "$type": "color",
+        "$description": "Text and icons on color.surface.inverse.",
+        "$extensions": {
+          "scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-inverse)"
+          }
+        }
+      },
+      "link": {
+        "$value": "{ref.color.dark.blue.800}",
+        "$type": "color",
+        "$description": "Links in running text.",
+        "$extensions": {
+          "scopes": [
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-link)"
+          }
+        }
+      },
+      "link-visited": {
+        "$value": "{ref.color.dark.purple.800}",
+        "$type": "color",
+        "$description": "Visited links.",
+        "$extensions": {
+          "scopes": [
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-content-link-visited)"
+          }
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "$value": "{ref.color.dark.neutral.300}",
+        "$type": "color",
+        "$description": "The default edge: dividers, the outline of cards and containers.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-primary)"
+          }
+        }
+      },
+      "secondary": {
+        "$value": "{ref.color.dark.neutral.200}",
+        "$type": "color",
+        "$description": "A quieter edge than primary: separation inside a container (menu sections, accordion rows).",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-secondary)"
+          }
+        }
+      },
+      "strong": {
+        "$value": "{ref.color.dark.neutral.500}",
+        "$type": "color",
+        "$description": "An edge that must be seen, 3:1 against the surface: fields, outlined buttons, anything whose edge identifies it.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-strong)"
+          }
+        }
+      },
+      "inverse": {
+        "$value": "{ref.color.alpha.black.100}",
+        "$type": "color",
+        "$description": "Edges on color.surface.inverse.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-inverse)"
+          }
+        }
+      },
+      "disabled": {
+        "$value": "{ref.color.dark.neutral.400}",
+        "$type": "color",
+        "$description": "The edge of a disabled element.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-disabled)"
+          }
+        }
+      },
+      "focus": {
+        "$value": "{ref.color.dark.cyan.600}",
+        "$type": "color",
+        "$description": "The focus indicator, on every focusable element: 3:1 against what it surrounds. Its width and offset are focus.ring.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-border-focus)"
+          }
+        }
+      }
+    },
+    "state": {
+      "hover": {
+        "overlay": {
+          "$value": "{ref.color.alpha.white.050}",
+          "$type": "color",
+          "$description": "Hover on neutral backgrounds and tints (white, grays, bg.low, a ghost button). Follows the scheme: darkens in light, lightens in dark.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-hover-overlay)"
+            }
+          }
+        },
+        "darken": {
+          "$value": "{ref.color.alpha.black.050}",
+          "$type": "color",
+          "$description": "Hover that always darkens, in both schemes: for a colored or image background you choose to darken.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-hover-darken)"
+            }
+          }
+        },
+        "lighten": {
+          "$value": "{ref.color.alpha.white.050}",
+          "$type": "color",
+          "$description": "Hover that always lightens, in both schemes: for a colored or image background you choose to lighten.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-hover-lighten)"
+            }
+          }
+        },
+        "inverse": {
+          "$value": "{ref.color.light.neutral.200}",
+          "$type": "color",
+          "$description": "Hover fill of an inverse element (color.surface.inverse: a neutral primary button): a step off the inverse fill, solid so its contrast is testable.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-hover-inverse)"
+            }
+          }
+        },
+        "border": {
+          "$value": "{ref.color.dark.neutral.700}",
+          "$type": "color",
+          "$description": "The edge of an interactive element, under the pointer (a field, an interactive card): 3:1 against the surface.",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-hover-border)"
+            }
+          }
+        },
+        "brand": {
+          "high": {
+            "$value": "{ref.color.dark.yellow.600}",
+            "$type": "color",
+            "$description": "Hover fill of a high-emphasis brand element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-brand-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.yellow.100}",
+            "$type": "color",
+            "$description": "Hover fill of a low-emphasis brand element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-brand-low)"
+              }
+            }
+          }
+        },
+        "accent": {
+          "high": {
+            "$value": "{ref.color.dark.fuchsia.300}",
+            "$type": "color",
+            "$description": "Hover fill of a high-emphasis accent element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-accent-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.fuchsia.100}",
+            "$type": "color",
+            "$description": "Hover fill of a low-emphasis accent element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-accent-low)"
+              }
+            }
+          }
+        },
+        "critical": {
+          "high": {
+            "$value": "{ref.color.dark.red.300}",
+            "$type": "color",
+            "$description": "Hover fill of a high-emphasis critical element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-critical-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.red.100}",
+            "$type": "color",
+            "$description": "Hover fill of a low-emphasis critical element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-hover-critical-low)"
+              }
+            }
+          }
+        }
+      },
+      "pressed": {
+        "overlay": {
+          "$value": "{ref.color.alpha.white.100}",
+          "$type": "color",
+          "$description": "Pressed on neutral backgrounds and tints (white, grays, bg.low, a ghost button). Follows the scheme: darkens in light, lightens in dark.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-pressed-overlay)"
+            }
+          }
+        },
+        "darken": {
+          "$value": "{ref.color.alpha.black.100}",
+          "$type": "color",
+          "$description": "Pressed that always darkens, in both schemes: for a colored or image background you choose to darken.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-pressed-darken)"
+            }
+          }
+        },
+        "lighten": {
+          "$value": "{ref.color.alpha.white.100}",
+          "$type": "color",
+          "$description": "Pressed that always lightens, in both schemes: for a colored or image background you choose to lighten.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-pressed-lighten)"
+            }
+          }
+        },
+        "inverse": {
+          "$value": "{ref.color.light.neutral.300}",
+          "$type": "color",
+          "$description": "Pressed fill of an inverse element (color.surface.inverse: a neutral primary button): two steps off the inverse fill.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-pressed-inverse)"
+            }
+          }
+        },
+        "border": {
+          "$value": "{ref.color.dark.neutral.800}",
+          "$type": "color",
+          "$description": "The edge of an interactive element, while pressed (a field, an interactive card): 3:1 against the surface.",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-state-pressed-border)"
+            }
+          }
+        },
+        "brand": {
+          "high": {
+            "$value": "{ref.color.dark.yellow.700}",
+            "$type": "color",
+            "$description": "Pressed fill of a high-emphasis brand element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-brand-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.yellow.200}",
+            "$type": "color",
+            "$description": "Pressed fill of a low-emphasis brand element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-brand-low)"
+              }
+            }
+          }
+        },
+        "accent": {
+          "high": {
+            "$value": "{ref.color.dark.fuchsia.200}",
+            "$type": "color",
+            "$description": "Pressed fill of a high-emphasis accent element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-accent-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.fuchsia.200}",
+            "$type": "color",
+            "$description": "Pressed fill of a low-emphasis accent element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-accent-low)"
+              }
+            }
+          }
+        },
+        "critical": {
+          "high": {
+            "$value": "{ref.color.dark.red.200}",
+            "$type": "color",
+            "$description": "Pressed fill of a high-emphasis critical element (bg.high: a primary button).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-critical-high)"
+              }
+            }
+          },
+          "low": {
+            "$value": "{ref.color.dark.red.200}",
+            "$type": "color",
+            "$description": "Pressed fill of a low-emphasis critical element that is transparent at rest (an outlined or ghost button). A solid tint, not an overlay, so content.low's contrast on it is tested.",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-state-pressed-critical-low)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand": {
+      "bg": {
+        "low": {
+          "$value": "{ref.color.dark.yellow.050}",
+          "$type": "color",
+          "$description": "A low-emphasis brand fill: a tint to sit content.low on (a subtle tag, a banner).",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-bg-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.dark.yellow.500}",
+          "$type": "color",
+          "$description": "A high-emphasis brand fill: the color at full strength, with content.high on it (a solid tag).",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-bg-high)"
+            }
+          }
+        }
+      },
+      "content": {
+        "low": {
+          "$value": "{ref.color.dark.yellow.950}",
+          "$type": "color",
+          "$description": "Brand text and icons on the page or on bg.low.",
+          "$extensions": {
+            "scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-content-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.black}",
+          "$type": "color",
+          "$description": "Text and icons on bg.high.",
+          "$extensions": {
+            "scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-content-high)"
+            }
+          }
+        }
+      },
+      "border": {
+        "low": {
+          "$value": "{ref.color.dark.yellow.300}",
+          "$type": "color",
+          "$description": "The edge of a low-emphasis brand element (on the page or on bg.low).",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-border-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.dark.yellow.600}",
+          "$type": "color",
+          "$description": "The edge of a high-emphasis brand element (on bg.high).",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-brand-border-high)"
+            }
+          }
+        }
+      }
+    },
+    "accent": {
+      "bg": {
+        "low": {
+          "$value": "{ref.color.dark.fuchsia.050}",
+          "$type": "color",
+          "$description": "A low-emphasis accent fill: a tint to sit content.low on (a subtle tag, a banner).",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-bg-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.dark.fuchsia.400}",
+          "$type": "color",
+          "$description": "A high-emphasis accent fill: the color at full strength, with content.high on it (a solid tag).",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-bg-high)"
+            }
+          }
+        }
+      },
+      "content": {
+        "low": {
+          "$value": "{ref.color.dark.fuchsia.800}",
+          "$type": "color",
+          "$description": "Accent text and icons on the page or on bg.low.",
+          "$extensions": {
+            "scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-content-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.white}",
+          "$type": "color",
+          "$description": "Text and icons on bg.high.",
+          "$extensions": {
+            "scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-content-high)"
+            }
+          }
+        }
+      },
+      "border": {
+        "low": {
+          "$value": "{ref.color.dark.fuchsia.300}",
+          "$type": "color",
+          "$description": "The edge of a low-emphasis accent element (on the page or on bg.low).",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-border-low)"
+            }
+          }
+        },
+        "high": {
+          "$value": "{ref.color.dark.fuchsia.500}",
+          "$type": "color",
+          "$description": "The edge of a high-emphasis accent element (on bg.high).",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-accent-border-high)"
+            }
+          }
+        }
+      }
+    },
+    "control": {
+      "checked": {
+        "bg": {
+          "$value": "{color.content.primary}",
+          "$type": "color",
+          "$description": "The fill of a checked checkbox, the ring and dot of a checked radio: the strongest neutral, 3:1 on the page so the state reads without the brand.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-checked-bg)"
+            }
+          }
+        },
+        "content": {
+          "$value": "{color.surface.primary}",
+          "$type": "color",
+          "$description": "The mark on a checked fill (the check, the dash): the page's color, inverted.",
+          "$extensions": {
+            "scopes": [
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-checked-content)"
+            }
+          }
+        }
+      },
+      "selected": {
+        "bg": {
+          "$value": "{ref.color.dark.neutral.300}",
+          "$type": "color",
+          "$description": "The selected option lying on a track (a segment): lighter than the track in both schemes, where surface.floating would be darker than surface.tertiary in dark.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-selected-bg)"
+            }
+          }
+        }
+      },
+      "unchecked": {
+        "border": {
+          "$value": "{color.content.primary}",
+          "$type": "color",
+          "$description": "The edge of an unchecked checkbox or radio: the strongest neutral, the same as the checked fill (near black on light, near white on dark), so unchecked and checked read as one control. 3:1 against the surface.",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-unchecked-border)"
+            }
+          }
+        }
+      },
+      "on": {
+        "bg": {
+          "$value": "{ref.color.dark.green.300}",
+          "$type": "color",
+          "$description": "The track of an on switch: green, its own value and not the success color, so a design system that changes its feedback palette doesn't change its switches. 3:1 on the page and under a white thumb.",
+          "$extensions": {
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-on-bg)"
+            }
+          }
+        }
+      },
+      "track": {
+        "$value": "{ref.color.dark.neutral.500}",
+        "$type": "color",
+        "$description": "The track of an off switch: a mid gray, 3:1 on the page and under a white thumb, so an off switch is findable without an edge on the thumb (WCAG 1.4.11).",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-control-track)"
+          }
+        }
+      },
+      "thumb": {
+        "$value": "{ref.color.white}",
+        "$type": "color",
+        "$description": "The thumb of a switch, on and off: always white.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-control-thumb)"
+          }
+        }
+      },
+      "invalid": {
+        "border": {
+          "$value": "{color.feedback.critical.border.high}",
+          "$type": "color",
+          "$description": "The edge of an invalid control (a checkbox, a radio, a text field, a chip): 3:1 against the surface, since with the error text it is what says something's wrong (WCAG 1.4.11). The strong critical edge, so it holds when a design system's critical color is light.",
+          "$extensions": {
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-color-control-invalid-border)"
+            }
+          }
+        }
+      }
+    },
+    "feedback": {
+      "info": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.050}",
+            "$type": "color",
+            "$description": "A low-emphasis info fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.cyan.300}",
+            "$type": "color",
+            "$description": "A high-emphasis info fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.800}",
+            "$type": "color",
+            "$description": "Info text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis info element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.cyan.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis info element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-info-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "success": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.green.050}",
+            "$type": "color",
+            "$description": "A low-emphasis success fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.green.300}",
+            "$type": "color",
+            "$description": "A high-emphasis success fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.green.800}",
+            "$type": "color",
+            "$description": "Success text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.green.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis success element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.green.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis success element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-success-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "warning": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.orange.050}",
+            "$type": "color",
+            "$description": "A low-emphasis warning fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.orange.500}",
+            "$type": "color",
+            "$description": "A high-emphasis warning fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.orange.800}",
+            "$type": "color",
+            "$description": "Warning text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.black}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.orange.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis warning element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.orange.600}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis warning element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-warning-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "critical": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.red.050}",
+            "$type": "color",
+            "$description": "A low-emphasis critical fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.red.400}",
+            "$type": "color",
+            "$description": "A high-emphasis critical fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.red.800}",
+            "$type": "color",
+            "$description": "Critical text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.red.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis critical element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.red.500}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis critical element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-feedback-critical-border-high)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "category": {
+      "blue": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.blue.100}",
+            "$type": "color",
+            "$description": "A low-emphasis blue fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.blue.300}",
+            "$type": "color",
+            "$description": "A high-emphasis blue fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.blue.900}",
+            "$type": "color",
+            "$description": "Blue text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.blue.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis blue element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.blue.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis blue element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-blue-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "green": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.green.100}",
+            "$type": "color",
+            "$description": "A low-emphasis green fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.green.300}",
+            "$type": "color",
+            "$description": "A high-emphasis green fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.green.900}",
+            "$type": "color",
+            "$description": "Green text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.green.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis green element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.green.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis green element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-green-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "yellow": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.yellow.100}",
+            "$type": "color",
+            "$description": "A low-emphasis yellow fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.yellow.500}",
+            "$type": "color",
+            "$description": "A high-emphasis yellow fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.yellow.900}",
+            "$type": "color",
+            "$description": "Yellow text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.black}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.yellow.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis yellow element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.yellow.600}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis yellow element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-yellow-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "orange": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.orange.100}",
+            "$type": "color",
+            "$description": "A low-emphasis orange fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.orange.300}",
+            "$type": "color",
+            "$description": "A high-emphasis orange fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.orange.900}",
+            "$type": "color",
+            "$description": "Orange text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.orange.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis orange element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.orange.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis orange element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-orange-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "purple": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.purple.100}",
+            "$type": "color",
+            "$description": "A low-emphasis purple fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.purple.300}",
+            "$type": "color",
+            "$description": "A high-emphasis purple fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.purple.900}",
+            "$type": "color",
+            "$description": "Purple text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.purple.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis purple element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.purple.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis purple element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-purple-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "pink": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.pink.100}",
+            "$type": "color",
+            "$description": "A low-emphasis pink fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.pink.300}",
+            "$type": "color",
+            "$description": "A high-emphasis pink fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.pink.900}",
+            "$type": "color",
+            "$description": "Pink text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.pink.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis pink element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.pink.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis pink element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-pink-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "cyan": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.100}",
+            "$type": "color",
+            "$description": "A low-emphasis cyan fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.cyan.300}",
+            "$type": "color",
+            "$description": "A high-emphasis cyan fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.900}",
+            "$type": "color",
+            "$description": "Cyan text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.cyan.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis cyan element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.cyan.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis cyan element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-cyan-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "red": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.red.100}",
+            "$type": "color",
+            "$description": "A low-emphasis red fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.red.300}",
+            "$type": "color",
+            "$description": "A high-emphasis red fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.red.900}",
+            "$type": "color",
+            "$description": "Red text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.red.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis red element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.red.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis red element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-red-border-high)"
+              }
+            }
+          }
+        }
+      },
+      "gray": {
+        "bg": {
+          "low": {
+            "$value": "{ref.color.dark.neutral.100}",
+            "$type": "color",
+            "$description": "A low-emphasis gray fill: a tint to sit content.low on (a subtle tag, a banner).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-bg-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.neutral.300}",
+            "$type": "color",
+            "$description": "A high-emphasis gray fill: the color at full strength, with content.high on it (a solid tag).",
+            "$extensions": {
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-bg-high)"
+              }
+            }
+          }
+        },
+        "content": {
+          "low": {
+            "$value": "{ref.color.dark.neutral.900}",
+            "$type": "color",
+            "$description": "Gray text and icons on the page or on bg.low.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-content-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.white}",
+            "$type": "color",
+            "$description": "Text and icons on bg.high.",
+            "$extensions": {
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-content-high)"
+              }
+            }
+          }
+        },
+        "border": {
+          "low": {
+            "$value": "{ref.color.dark.neutral.300}",
+            "$type": "color",
+            "$description": "The edge of a low-emphasis gray element (on the page or on bg.low).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-border-low)"
+              }
+            }
+          },
+          "high": {
+            "$value": "{ref.color.dark.neutral.400}",
+            "$type": "color",
+            "$description": "The edge of a high-emphasis gray element (on bg.high).",
+            "$extensions": {
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--ds-color-category-gray-border-high)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "presence": {
+      "online": {
+        "$value": "{ref.color.dark.green.400}",
+        "$type": "color",
+        "$description": "Online: active and reachable.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-presence-online)"
+          }
+        }
+      },
+      "away": {
+        "$value": "{ref.color.dark.amber.400}",
+        "$type": "color",
+        "$description": "Away: idle, reachable later.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-presence-away)"
+          }
+        }
+      },
+      "busy": {
+        "$value": "{ref.color.dark.red.400}",
+        "$type": "color",
+        "$description": "Busy: present, not to be disturbed.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-presence-busy)"
+          }
+        }
+      },
+      "offline": {
+        "$value": "{ref.color.dark.stone.500}",
+        "$type": "color",
+        "$description": "Offline: not connected.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-presence-offline)"
+          }
+        }
+      }
+    },
+    "notification": {
+      "bg": {
+        "$value": "{ref.color.dark.red.400}",
+        "$type": "color",
+        "$description": "A badge's fill: 3:1 on the page, so a dot reads without a number.",
+        "$extensions": {
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-notification-bg)"
+          }
+        }
+      },
+      "content": {
+        "$value": "{ref.color.white}",
+        "$type": "color",
+        "$description": "A badge's count, on its fill.",
+        "$extensions": {
+          "scopes": [
+            "TEXT_FILL"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-color-notification-content)"
+          }
+        }
+      }
+    }
+  },
+  "focus": {
+    "ring": {
+      "width": {
+        "$value": "{ref.border.02}",
+        "$type": "number",
+        "$description": "The focus ring's width.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-focus-ring-width)"
+          }
+        }
+      },
+      "offset": {
+        "$value": "{ref.space.0002}",
+        "$type": "number",
+        "$description": "The gap between an element and its focus ring.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-focus-ring-offset)"
+          }
+        }
+      }
+    }
+  },
+  "layer": {
+    "base": {
+      "$value": 0,
+      "$type": "number",
+      "$description": "The page.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-base)"
+        }
+      }
+    },
+    "raised": {
+      "$value": 1,
+      "$type": "number",
+      "$description": "Something lifted within its context: a sticky table cell.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-raised)"
+        }
+      }
+    },
+    "sticky": {
+      "$value": 100,
+      "$type": "number",
+      "$description": "Sticky headers and toolbars.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-sticky)"
+        }
+      }
+    },
+    "overlay": {
+      "$value": 1000,
+      "$type": "number",
+      "$description": "Menus and popovers.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-overlay)"
+        }
+      }
+    },
+    "modal": {
+      "$value": 1100,
+      "$type": "number",
+      "$description": "Dialogs and their scrim.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-modal)"
+        }
+      }
+    },
+    "toast": {
+      "$value": 1200,
+      "$type": "number",
+      "$description": "Toasts, above dialogs.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-toast)"
+        }
+      }
+    },
+    "tooltip": {
+      "$value": 1300,
+      "$type": "number",
+      "$description": "Tooltips, above everything.",
+      "$extensions": {
+        "codeSyntax": {
+          "WEB": "var(--ds-layer-tooltip)"
+        }
+      }
+    }
+  },
+  "layout": {
+    "breakpoint": {
+      "sm": {
+        "$value": 0,
+        "$type": "number",
+        "$description": "Phones.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-breakpoint-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": 768,
+        "$type": "number",
+        "$description": "Tablets and small windows.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-breakpoint-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": 1024,
+        "$type": "number",
+        "$description": "Laptops.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-breakpoint-lg)"
+          }
+        }
+      },
+      "xl": {
+        "$value": 1440,
+        "$type": "number",
+        "$description": "Large screens.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-breakpoint-xl)"
+          }
+        }
+      }
+    },
+    "grid": {
+      "gutter": {
+        "$value": "{space.layout.gutter}",
+        "$type": "number",
+        "$description": "Space between grid columns.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-grid-gutter)"
+          }
+        }
+      },
+      "margin": {
+        "$value": "{space.layout.margin}",
+        "$type": "number",
+        "$description": "The grid's outer margin.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-grid-margin)"
+          }
+        }
+      }
+    },
+    "container": {
+      "max": {
+        "sm": {
+          "$value": 640,
+          "$type": "number",
+          "$description": "Narrow content: forms, articles.",
+          "$extensions": {
+            "codeSyntax": {
+              "WEB": "var(--ds-layout-container-max-sm)"
+            }
+          }
+        },
+        "md": {
+          "$value": 768,
+          "$type": "number",
+          "$description": "Medium content.",
+          "$extensions": {
+            "codeSyntax": {
+              "WEB": "var(--ds-layout-container-max-md)"
+            }
+          }
+        },
+        "lg": {
+          "$value": 1024,
+          "$type": "number",
+          "$description": "Wide content.",
+          "$extensions": {
+            "codeSyntax": {
+              "WEB": "var(--ds-layout-container-max-lg)"
+            }
+          }
+        },
+        "xl": {
+          "$value": 1280,
+          "$type": "number",
+          "$description": "The widest: dashboards.",
+          "$extensions": {
+            "codeSyntax": {
+              "WEB": "var(--ds-layout-container-max-xl)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "$value": "{ref.duration.0000}",
+        "$type": "number",
+        "$description": "No animation.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-motion-duration-instant)"
+          }
+        }
+      }
+    }
+  },
+  "opacity": {
+    "pulse": {
+      "$value": "{ref.opacity.050}",
+      "$type": "number",
+      "$description": "The faint end of a loading pulse (a skeleton breathing between 1 and this).",
+      "$extensions": {
+        "scopes": [
+          "OPACITY"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-opacity-pulse)"
+        }
+      }
+    }
+  },
+  "radius": {
+    "none": {
+      "$value": "{ref.radius.0000}",
+      "$type": "number",
+      "$description": "Square corners.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-none)"
+        }
+      }
+    },
+    "xs": {
+      "$value": "{ref.radius.0002}",
+      "$type": "number",
+      "$description": "Elements up to 16px tall that aren't controls: a small checkbox's box.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-xs)"
+        }
+      }
+    },
+    "sm": {
+      "$value": "{ref.radius.0002}",
+      "$type": "number",
+      "$description": "Elements up to 20px tall: a checkbox's box, a small tag, a tooltip, a tab's top corners.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-sm)"
+        }
+      }
+    },
+    "md": {
+      "$value": "{ref.radius.0004}",
+      "$type": "number",
+      "$description": "Elements up to 24px tall: a large checkbox's box, a tag, square avatars.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-md)"
+        }
+      }
+    },
+    "lg": {
+      "$value": "{ref.radius.0004}",
+      "$type": "number",
+      "$description": "Elements up to 32px tall that aren't controls: a large tag.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-lg)"
+        }
+      }
+    },
+    "control": {
+      "$value": "{ref.radius.0004}",
+      "$type": "number",
+      "$description": "Buttons, inputs and other controls.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-control)"
+        }
+      }
+    },
+    "container": {
+      "sm": {
+        "$value": "{ref.radius.0008}",
+        "$type": "number",
+        "$description": "Boxes in the content and small floating layers: cards, alerts, toasts, menus, popovers, a combobox's list.",
+        "$extensions": {
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-radius-container-sm)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.radius.0008}",
+        "$type": "number",
+        "$description": "Large surfaces over the screen: dialogs.",
+        "$extensions": {
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-radius-container-lg)"
+          }
+        }
+      }
+    },
+    "full": {
+      "$value": "{ref.radius.9999}",
+      "$type": "number",
+      "$description": "Pills and circles.",
+      "$extensions": {
+        "scopes": [
+          "CORNER_RADIUS"
+        ],
+        "codeSyntax": {
+          "WEB": "var(--ds-radius-full)"
+        }
+      }
+    }
+  },
+  "border": {
+    "width": {
+      "default": {
+        "$value": "{ref.border.01}",
+        "$type": "number",
+        "$description": "The default stroke: dividers, containers, inputs.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-border-width-default)"
+          }
+        }
+      },
+      "strong": {
+        "$value": "{ref.border.02}",
+        "$type": "number",
+        "$description": "An emphasized stroke: selected and focused states.",
+        "$extensions": {
+          "scopes": [
+            "STROKE_FLOAT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-border-width-strong)"
+          }
+        }
+      }
+    }
+  },
+  "size": {
+    "icon": {
+      "xs": {
+        "$value": "{ref.size.0012}",
+        "$type": "number",
+        "$description": "A 12px icon.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-icon-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.size.0016}",
+        "$type": "number",
+        "$description": "A 16px icon: in small controls and dense text.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-icon-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0020}",
+        "$type": "number",
+        "$description": "A 20px icon: in controls.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-icon-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.size.0024}",
+        "$type": "number",
+        "$description": "A 24px icon: standalone.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-icon-lg)"
+          }
+        }
+      }
+    },
+    "content": {
+      "xs": {
+        "$value": "{ref.size.0280}",
+        "$type": "number",
+        "$description": "A few words of floating text (a tooltip): 280px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-content-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.size.0400}",
+        "$type": "number",
+        "$description": "A short dialog: a confirmation, one question. 400px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-content-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0560}",
+        "$type": "number",
+        "$description": "A dialog with a form or a paragraph: 560px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-content-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.size.0720}",
+        "$type": "number",
+        "$description": "A dialog with a table or a longer form: 720px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-content-lg)"
+          }
+        }
+      }
+    },
+    "track": {
+      "sm": {
+        "$value": "{ref.size.0004}",
+        "$type": "number",
+        "$description": "A thin track, inline or in a dense row: 4px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-track-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0008}",
+        "$type": "number",
+        "$description": "The default track: 8px.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-track-md)"
+          }
+        }
+      }
+    },
+    "media": {
+      "xs": {
+        "$value": "{ref.size.0024}",
+        "$type": "number",
+        "$description": "A 24px picture: in dense lists, comments, an assignee.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-media-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.size.0032}",
+        "$type": "number",
+        "$description": "A 32px picture: in lists and table rows.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-media-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0040}",
+        "$type": "number",
+        "$description": "A 40px picture: next to a name in a header or a card.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-media-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.size.0048}",
+        "$type": "number",
+        "$description": "A 48px picture: when the picture leads a row or a card.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-media-lg)"
+          }
+        }
+      },
+      "xl": {
+        "$value": "{ref.size.0064}",
+        "$type": "number",
+        "$description": "A 64px picture: the focus of the screen, a profile.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-media-xl)"
+          }
+        }
+      }
+    },
+    "indicator": {
+      "xs": {
+        "$value": "{ref.size.0008}",
+        "$type": "number",
+        "$description": "An 8px indicator: a status or a badge's dot on a small avatar, next to body text.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-indicator-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.size.0012}",
+        "$type": "number",
+        "$description": "A 12px indicator: a dot on a medium avatar.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-indicator-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0016}",
+        "$type": "number",
+        "$description": "A 16px indicator: a dot on a large avatar, a small counter.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-indicator-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.size.0020}",
+        "$type": "number",
+        "$description": "A 20px indicator: a counter.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-indicator-lg)"
+          }
+        }
+      },
+      "xl": {
+        "$value": "{ref.size.0024}",
+        "$type": "number",
+        "$description": "A 24px indicator: a large counter.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-indicator-xl)"
+          }
+        }
+      }
+    }
+  },
+  "type": {
+    "body": {
+      "lg": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "Long-form reading.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0018}",
+          "$type": "number",
+          "$description": "Long-form reading.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0028}",
+          "$type": "number",
+          "$description": "Long-form reading.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.regular}",
+          "$type": "number",
+          "$description": "Long-form reading.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "Long-form reading.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-lg-letter-spacing)"
+            }
+          }
+        }
+      },
+      "md": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "The default text.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0016}",
+          "$type": "number",
+          "$description": "The default text.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0024}",
+          "$type": "number",
+          "$description": "The default text.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.regular}",
+          "$type": "number",
+          "$description": "The default text.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The default text.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "Secondary text and dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0014}",
+          "$type": "number",
+          "$description": "Secondary text and dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0020}",
+          "$type": "number",
+          "$description": "Secondary text and dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.regular}",
+          "$type": "number",
+          "$description": "Secondary text and dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "Secondary text and dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-body-sm-letter-spacing)"
+            }
+          }
+        }
+      }
+    },
+    "label": {
+      "lg": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0016}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0020}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-letter-spacing)"
+            }
+          }
+        }
+      },
+      "md": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "The label of controls: buttons, fields, tabs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0014}",
+          "$type": "number",
+          "$description": "The label of controls: buttons, fields, tabs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0016}",
+          "$type": "number",
+          "$description": "The label of controls: buttons, fields, tabs.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The label of controls: buttons, fields, tabs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The label of controls: buttons, fields, tabs.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "The label of small controls and tags.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0012}",
+          "$type": "number",
+          "$description": "The label of small controls and tags.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0016}",
+          "$type": "number",
+          "$description": "The label of small controls and tags.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The label of small controls and tags.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The label of small controls and tags.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-sm-letter-spacing)"
+            }
+          }
+        }
+      },
+      "xlg": {
+        "font-family": {
+          "$value": "{font.family.text}",
+          "$type": "string",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0020}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0028}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The label of large controls.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-label-lg-letter-spacing)"
+            }
+          }
+        }
+      }
+    },
+    "code": {
+      "md": {
+        "font-family": {
+          "$value": "{font.family.code}",
+          "$type": "string",
+          "$description": "Code in running text and blocks.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0014}",
+          "$type": "number",
+          "$description": "Code in running text and blocks.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0020}",
+          "$type": "number",
+          "$description": "Code in running text and blocks.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.regular}",
+          "$type": "number",
+          "$description": "Code in running text and blocks.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "Code in running text and blocks.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.code}",
+          "$type": "string",
+          "$description": "Small code: inline in dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0012}",
+          "$type": "number",
+          "$description": "Small code: inline in dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0016}",
+          "$type": "number",
+          "$description": "Small code: inline in dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.regular}",
+          "$type": "number",
+          "$description": "Small code: inline in dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "Small code: inline in dense UIs.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-code-sm-letter-spacing)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "display": {
+        "$value": "{ref.font.family.system-serif}",
+        "$type": "string",
+        "$description": "The family of display and headline roles.",
+        "$extensions": {
+          "scopes": [
+            "FONT_FAMILY"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-family-display)"
+          }
+        }
+      },
+      "text": {
+        "$value": "{ref.font.family.Helvetica}",
+        "$type": "string",
+        "$description": "The family of every other role.",
+        "$extensions": {
+          "scopes": [
+            "FONT_FAMILY"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-family-text)"
+          }
+        }
+      },
+      "code": {
+        "$value": "{ref.font.family.ibm-plex-mono}",
+        "$type": "string",
+        "$description": "The family of code.",
+        "$extensions": {
+          "scopes": [
+            "FONT_FAMILY"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-family-code)"
+          }
+        }
+      }
+    },
+    "weight": {
+      "regular": {
+        "$value": "{ref.font.weight.400}",
+        "$type": "number",
+        "$description": "Body text.",
+        "$extensions": {
+          "scopes": [
+            "FONT_WEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-weight-regular)"
+          }
+        }
+      },
+      "medium": {
+        "$value": "{ref.font.weight.500}",
+        "$type": "number",
+        "$description": "Labels and display.",
+        "$extensions": {
+          "scopes": [
+            "FONT_WEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-weight-medium)"
+          }
+        }
+      },
+      "strong": {
+        "$value": "{ref.font.weight.600}",
+        "$type": "number",
+        "$description": "Titles and emphasis.",
+        "$extensions": {
+          "scopes": [
+            "FONT_WEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-font-weight-strong)"
+          }
+        }
+      }
+    }
+  }
+}

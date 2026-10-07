@@ -1,0 +1,46 @@
+{
+  "motion": {
+    "duration": {
+      "fast": {
+        "$value": "{ref.duration.0000}",
+        "$type": "number",
+        "$description": "Small state changes: hover, press, a toggle.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-motion-duration-fast)"
+          }
+        }
+      },
+      "base": {
+        "$value": "{ref.duration.0000}",
+        "$type": "number",
+        "$description": "Things that appear or move: a menu, a tooltip.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-motion-duration-base)"
+          }
+        }
+      },
+      "slow": {
+        "$value": "{ref.duration.0000}",
+        "$type": "number",
+        "$description": "Large surfaces: a dialog, a sheet.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-motion-duration-slow)"
+          }
+        }
+      },
+      "loop": {
+        "$value": "{ref.duration.1600}",
+        "$type": "number",
+        "$description": "One turn of a looping indicator (a spinner). With reduced motion it slows down instead of stopping: the spinner still has to say something is happening.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-motion-duration-loop)"
+          }
+        }
+      }
+    }
+  }
+}

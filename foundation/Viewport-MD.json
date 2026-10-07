@@ -1,0 +1,737 @@
+{
+  "layout": {
+    "grid": {
+      "columns": {
+        "$value": 8,
+        "$type": "number",
+        "$description": "Columns of the page grid.",
+        "$extensions": {
+          "codeSyntax": {
+            "WEB": "var(--ds-layout-grid-columns)"
+          }
+        }
+      }
+    }
+  },
+  "space": {
+    "layout": {
+      "margin": {
+        "$value": "{ref.space.0024}",
+        "$type": "number",
+        "$description": "The page's outer margin.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-layout-margin)"
+          }
+        }
+      },
+      "gutter": {
+        "$value": "{ref.space.0016}",
+        "$type": "number",
+        "$description": "The space between grid columns.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-layout-gutter)"
+          }
+        }
+      },
+      "section": {
+        "$value": "{ref.space.0048}",
+        "$type": "number",
+        "$description": "The space between page sections.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-layout-section)"
+          }
+        }
+      }
+    }
+  },
+  "type": {
+    "display": {
+      "lg": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0048}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0056}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-letter-spacing)"
+            }
+          }
+        }
+      },
+      "md": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "A large statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0040}",
+          "$type": "number",
+          "$description": "A large statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0044}",
+          "$type": "number",
+          "$description": "A large statement.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "A large statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "A large statement.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "A modest statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0036}",
+          "$type": "number",
+          "$description": "A modest statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0044}",
+          "$type": "number",
+          "$description": "A modest statement.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "A modest statement.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "A modest statement.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-sm-letter-spacing)"
+            }
+          }
+        }
+      },
+      "xlg": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0056}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0064}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "The largest statement on a page: a hero.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-display-lg-letter-spacing)"
+            }
+          }
+        }
+      }
+    },
+    "headline": {
+      "lg": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0040}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0048}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-letter-spacing)"
+            }
+          }
+        }
+      },
+      "md": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0032}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0036}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0024}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0032}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-letter-spacing)"
+            }
+          }
+        }
+      }
+    },
+    "title": {
+      "lg": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0036}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0048}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.tight}",
+          "$type": "number",
+          "$description": "The title of a page.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-lg-letter-spacing)"
+            }
+          }
+        }
+      },
+      "md": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0024}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0032}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The title of a major section.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-md-letter-spacing)"
+            }
+          }
+        }
+      },
+      "sm": {
+        "font-family": {
+          "$value": "{font.family.display}",
+          "$type": "string",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-family)"
+            }
+          }
+        },
+        "font-size": {
+          "$value": "{ref.font.size.0024}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-size)"
+            }
+          }
+        },
+        "line-height": {
+          "$value": "{ref.font.line-height.0032}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-line-height)"
+            }
+          }
+        },
+        "font-weight": {
+          "$value": "{font.weight.medium}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-font-weight)"
+            }
+          }
+        },
+        "letter-spacing": {
+          "$value": "{ref.font.tracking.none}",
+          "$type": "number",
+          "$description": "The title of a section.",
+          "$extensions": {
+            "scopes": [
+              "LETTER_SPACING"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ds-type-headline-sm-letter-spacing)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

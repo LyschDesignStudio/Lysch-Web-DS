@@ -1,0 +1,220 @@
+{
+  "size": {
+    "control": {
+      "sm": {
+        "$value": "{ref.size.0036}",
+        "$type": "number",
+        "$description": "The height of small controls.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-control-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.size.0044}",
+        "$type": "number",
+        "$description": "The height of controls: buttons, inputs, selects.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-control-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.size.0056}",
+        "$type": "number",
+        "$description": "The height of large controls.",
+        "$extensions": {
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-size-control-lg)"
+          }
+        }
+      }
+    }
+  },
+  "space": {
+    "inset": {
+      "2xs": {
+        "$value": "{ref.space.0004}",
+        "$type": "number",
+        "$description": "2px: the tightest padding, a tag's.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-2xs)"
+          }
+        }
+      },
+      "xs": {
+        "$value": "{ref.space.0008}",
+        "$type": "number",
+        "$description": "4px: small elements (a tag, a chip's icon side).",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.space.0012}",
+        "$type": "number",
+        "$description": "8px: compact controls and list rows.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.space.0016}",
+        "$type": "number",
+        "$description": "12px: small controls (a small button's sides).",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.space.0020}",
+        "$type": "number",
+        "$description": "16px: controls (a button's, an input's sides).",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-lg)"
+          }
+        }
+      },
+      "xl": {
+        "$value": "{ref.space.0032}",
+        "$type": "number",
+        "$description": "24px: containers (a card, a dialog).",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-xl)"
+          }
+        }
+      },
+      "2xl": {
+        "$value": "{ref.space.0040}",
+        "$type": "number",
+        "$description": "32px: large containers and sections.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-inset-2xl)"
+          }
+        }
+      }
+    },
+    "gap": {
+      "2xs": {
+        "$value": "{ref.space.0004}",
+        "$type": "number",
+        "$description": "Between tightly bound parts: an icon and its label in a small control.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-2xs)"
+          }
+        }
+      },
+      "xs": {
+        "$value": "{ref.space.0008}",
+        "$type": "number",
+        "$description": "Between an icon and its label.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-xs)"
+          }
+        }
+      },
+      "sm": {
+        "$value": "{ref.space.0012}",
+        "$type": "number",
+        "$description": "Between related items: the options of a group.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-sm)"
+          }
+        }
+      },
+      "md": {
+        "$value": "{ref.space.0016}",
+        "$type": "number",
+        "$description": "Between the fields of a form.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-md)"
+          }
+        }
+      },
+      "lg": {
+        "$value": "{ref.space.0024}",
+        "$type": "number",
+        "$description": "Between groups.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-lg)"
+          }
+        }
+      },
+      "xl": {
+        "$value": "{ref.space.0032}",
+        "$type": "number",
+        "$description": "Between sections of a view.",
+        "$extensions": {
+          "scopes": [
+            "GAP"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--ds-space-gap-xl)"
+          }
+        }
+      }
+    }
+  }
+}
