@@ -1,0 +1,35 @@
+{
+  "name": "@lyschdesignstudio/web-ds",
+  "version": "0.1.0",
+  "description": "Lysch Web DS: design tokens as CSS custom properties, generated from the Figma foundation.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LyschDesignStudio/Lysch-Web-DS.git"
+  },
+  "style": "css/lysch-web-ds.css",
+  "main": "css/lysch-web-ds.css",
+  "exports": {
+    ".": {
+      "style": "./css/lysch-web-ds.css",
+      "default": "./css/lysch-web-ds.css"
+    },
+    "./typography.css": "./css/typography.css",
+    "./tokens/*": "./css/tokens/*",
+    "./json/*": "./foundation/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "css",
+    "foundation"
+  ],
+  "scripts": {
+    "build": "node scripts/build-css.mjs"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

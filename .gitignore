@@ -1,0 +1,4 @@
+node_modules/
+*.tgz
+foundation.zip
+.DS_Store
